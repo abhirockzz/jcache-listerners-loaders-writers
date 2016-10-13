@@ -65,23 +65,21 @@ public class JCacheExmaple {
 
         @Override
         public void writeAll(Collection<Cache.Entry<? extends String, ? extends String>> clctn) throws CacheWriterException {
-
+            //ignored
         }
 
         @Override
         public void delete(Object o) throws CacheWriterException {
-
+            //ignored
         }
 
         @Override
         public void deleteAll(Collection<?> clctn) throws CacheWriterException {
+            //ignored
         }
 
     }
 
-    /**
-     * A simple cache listener example
-     */
     public static class MyCacheEntryListener implements CacheEntryCreatedListener<String, String>,
             CacheEntryUpdatedListener<String, String>, Serializable {
 
